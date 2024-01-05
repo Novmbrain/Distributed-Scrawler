@@ -1,4 +1,4 @@
-package com.imt.persistent.service;
+package com.imt.persistent.beans;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
