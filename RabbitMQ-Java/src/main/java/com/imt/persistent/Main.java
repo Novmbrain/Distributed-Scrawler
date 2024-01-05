@@ -26,23 +26,9 @@ public class Main {
       String message = new String(delivery.getBody(), StandardCharsets.UTF_8);
       List<Post> posts = Utils.extractPosts(message);
       posts.stream().forEach(System.out::println);
-
-      //System.out.println(" [x] Received '" + message + "'");
     };
 
     Channel channel = MQReceiver.getChannel();
     channel.basicConsume(MQReceiver.RESULTS_QUEUE, true, deliverCallback, consumerTag -> { });
-
-    //userService.register("bob@example.com", "password1", "Bob");
-    //userService.register("alice@example.com", "password2", "Alice");
-    //User bob = userService.getUserByName("Bob");
-    //System.out.println(bob);
-    //User tom = userService.register("tom@example.com", "password3", "Tom");
-    //System.out.println(tom);
-    //System.out.println("Total: " + userService.getUsers());
-    //for (User u : userService.getUsers(1)) {
-    //  System.out.println(u);
-    //}
-    //((ConfigurableApplicationContext) context).close();
   }
 }

@@ -25,6 +25,7 @@ public class Utils {
       if (postsNode.isArray()) {
         for (JsonNode postNode : postsNode) {
           Post post = mapper.treeToValue(postNode, Post.class);
+          post.setSub_name(rootNode.get("sub_name").asText());
           posts.add(post);
         }
       }

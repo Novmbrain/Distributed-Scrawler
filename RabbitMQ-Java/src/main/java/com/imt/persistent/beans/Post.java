@@ -18,6 +18,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Post {
+  private String sub_name;
   private String title;
   private int upvotes;
   private int downvotes;

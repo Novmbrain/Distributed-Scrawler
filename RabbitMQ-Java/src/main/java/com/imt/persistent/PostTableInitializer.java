@@ -18,6 +18,7 @@ public class PostTableInitializer {
     jdbcTemplate.update(
       "CREATE TABLE IF NOT EXISTS posts (" +
         "id BIGINT IDENTITY NOT NULL PRIMARY KEY, " + // Assuming an ID field for unique identification
+        "sub_name VARCHAR(255) NOT NULL, " +
         "title VARCHAR(255) NOT NULL, " + // Adjust the VARCHAR size as needed
         "upvotes INTEGER NOT NULL, " +
         "downvotes INTEGER NOT NULL, " +
