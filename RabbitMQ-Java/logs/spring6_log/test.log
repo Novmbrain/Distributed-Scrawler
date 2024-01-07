@@ -1,0 +1,80 @@
+12:13:47.830 DEBUG org.springframework.context.support.AbstractApplicationContext 630 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51c693d
+12:13:47.848 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+12:13:47.893 DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/service/PostService.class]
+12:13:47.894 DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/service/UserService.class]
+12:13:47.894 DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/utils/PostTableInitializer.class]
+12:13:47.946 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+12:13:47.947 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+12:13:47.948 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+12:13:47.949 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+12:13:47.953 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'appConfig'
+12:13:47.959 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.url' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+12:13:47.960 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.username' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+12:13:47.961 DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.password' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+12:13:47.961 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postService'
+12:13:47.964 WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.service.PostService
+12:13:47.965 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createJdbcTemplate'
+12:13:47.967 WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.AppConfig
+12:13:47.968 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createDataSource'
+12:13:47.971 DEBUG com.zaxxer.hikari.HikariConfig 1100 logConfiguration - HikariPool-1 - configuration:
+12:13:47.973 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - allowPoolSuspension.............false
+12:13:47.974 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - autoCommit......................true
+12:13:47.974 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - catalog.........................none
+12:13:47.974 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionInitSql...............none
+12:13:47.975 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTestQuery.............none
+12:13:47.975 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTimeout...............30000
+12:13:47.975 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSource......................none
+12:13:47.976 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceClassName.............none
+12:13:47.976 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceJNDI..................none
+12:13:47.976 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceProperties............{password=<masked>, idleTimeout=60, autoCommit=true, connectionTimeout=5}
+12:13:47.977 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - driverClassName.................none
+12:13:47.977 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - exceptionOverrideClassName......none
+12:13:47.977 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckProperties...........{}
+12:13:47.977 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckRegistry.............none
+12:13:47.978 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - idleTimeout.....................600000
+12:13:47.978 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - initializationFailTimeout.......1
+12:13:47.978 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - isolateInternalQueries..........false
+12:13:47.979 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - jdbcUrl.........................jdbc:hsqldb:file:testdb
+12:13:47.979 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - keepaliveTime...................0
+12:13:47.979 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - leakDetectionThreshold..........0
+12:13:47.979 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maxLifetime.....................1800000
+12:13:47.980 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maximumPoolSize.................10
+12:13:47.980 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricRegistry..................none
+12:13:47.980 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricsTrackerFactory...........none
+12:13:47.980 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - minimumIdle.....................10
+12:13:47.980 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - password........................<masked>
+12:13:47.981 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - poolName........................"HikariPool-1"
+12:13:47.981 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - readOnly........................false
+12:13:47.981 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - registerMbeans..................false
+12:13:47.981 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - scheduledExecutor...............none
+12:13:47.982 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - schema..........................none
+12:13:47.982 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - threadFactory...................internal
+12:13:47.982 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - transactionIsolation............default
+12:13:47.982 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - username........................"sa"
+12:13:47.982 DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - validationTimeout...............5000
+12:13:47.985 INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - HikariPool-1 - Starting...
+12:13:47.990 DEBUG com.zaxxer.hikari.util.DriverDataSource 107 <init> - Loaded driver with class name org.hsqldb.jdbc.JDBCDriver for jdbcUrl=jdbc:hsqldb:file:testdb
+12:13:48.113 INFO  com.zaxxer.hikari.pool.PoolBase 536 getAndSetNetworkTimeout - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+12:13:48.114 INFO  com.zaxxer.hikari.pool.HikariPool 565 checkFailFast - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@794b435f
+12:13:48.115 INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - HikariPool-1 - Start completed.
+12:13:48.116 DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'createJdbcTemplate' via factory method to bean named 'createDataSource'
+12:13:48.126 DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'postService' via constructor to bean named 'createJdbcTemplate'
+12:13:48.127 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'userService'
+12:13:48.128 DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postTableInitializer'
+12:13:48.129 DEBUG org.springframework.jdbc.core.JdbcTemplate 537 update - Executing SQL update [CREATE TABLE IF NOT EXISTS posts (id BIGINT IDENTITY NOT NULL PRIMARY KEY, sub_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, upvotes INTEGER NOT NULL, downvotes INTEGER NOT NULL, num_comments INTEGER NOT NULL, created_utc BIGINT NOT NULL)]
+12:13:48.131 DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+12:13:48.153 ERROR com.imt.rabbitmq.Starter 32 main - error
+12:13:48.173 DEBUG com.rabbitmq.client.impl.ConsumerWorkService 40 <init> - Creating executor service with 8 thread(s) for consumer work service
+12:13:48.220 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+12:13:48.221 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@1153f3ea
+12:13:48.233 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@1bab989a
+12:13:48.244 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@5ea9158b
+12:13:48.256 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@506b7117
+12:13:48.266 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@6fbd8d35
+12:13:48.279 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@2895b710
+12:13:48.292 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@3e86eac4
+12:13:48.304 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@356ed7ca
+12:13:48.317 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@36b93077
+12:13:48.330 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+12:14:18.221 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+12:14:18.222 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
