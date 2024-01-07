@@ -14,8 +14,11 @@ def main(sub_name):
 def send_to_channel(message, sub_name):
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
     channel = connection.channel()
-    channel.queue_declare(queue='results_queue')
-    channel.basic_publish(exchange='', routing_key='results_queue', body=message)
+    channel.queue_declare(queue='results_queue', durable=True)
+    channel.basic_publish(exchange='', 
+                          routing_key='results_queue', 
+                          body=message, 
+                          properties=pika.BasicProperties(delivery_mode = pika.DeliveryMode.Persistent))
 
     print(" [x] Sent results of %s" % sub_name)
     connection.close()

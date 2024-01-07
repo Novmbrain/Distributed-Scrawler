@@ -14,7 +14,7 @@ public class MQReceiver {
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
-    channel.queueDeclare(RESULTS_QUEUE, false, false, false, null);
+    channel.queueDeclare(RESULTS_QUEUE, true, false, false, null);
     System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
     return channel;
   }

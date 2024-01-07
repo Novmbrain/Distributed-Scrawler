@@ -29,19 +29,24 @@ public class Starter {
       String message = new String(delivery.getBody(), StandardCharsets.UTF_8);
       List<Post> posts = Utils.extractPosts(message);
       posts.forEach(
-        post -> postService.createPost(
-          post.getSubName(),
-          post.getTitle(),
-          post.getUpvotes(),
-          post.getDownvotes(),
-          post.getNumComments(),
-          post.getCreatedUtc())
+        post ->
+          postService.createPost(
+            post.getSubName(),
+            post.getTitle(),
+            post.getUpvotes(),
+            post.getDownvotes(),
+            post.getNumComments(),
+            post.getCreatedUtc()
+          )
       );
 
+        posts.forEach(post -> log.info(post.toString()));
     };
 
     Channel channel = MQReceiver.getChannel();
-    channel.basicConsume(MQReceiver.RESULTS_QUEUE, true, deliverCallback, consumerTag -> {
+    channel.basicConsume(MQReceiver.RESULTS_QUEUE, true, deliverCallback, consumerTag ->
+
+    {
     });
   }
 }

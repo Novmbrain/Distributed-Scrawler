@@ -575,3 +575,540 @@
 2024-01-07 at 12:13:48 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
 2024-01-07 at 12:14:18 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2024-01-07 at 12:14:18 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.context.support.AbstractApplicationContext 630 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51c693d
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/service/PostService.class]
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/utils/PostTableInitializer.class]
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'appConfig'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.url' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.username' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.password' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postService'
+2024-01-07 at 17:49:43 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.service.PostService
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createJdbcTemplate'
+2024-01-07 at 17:49:43 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.AppConfig
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createDataSource'
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1100 logConfiguration - HikariPool-1 - configuration:
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - allowPoolSuspension.............false
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - autoCommit......................true
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - catalog.........................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionInitSql...............none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTestQuery.............none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTimeout...............30000
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSource......................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceClassName.............none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceJNDI..................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceProperties............{password=<masked>, idleTimeout=60, autoCommit=true, connectionTimeout=5}
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - driverClassName.................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - exceptionOverrideClassName......none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckProperties...........{}
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckRegistry.............none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - idleTimeout.....................600000
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - initializationFailTimeout.......1
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - isolateInternalQueries..........false
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - jdbcUrl.........................jdbc:hsqldb:file:testdb
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - keepaliveTime...................0
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - leakDetectionThreshold..........0
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maxLifetime.....................1800000
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maximumPoolSize.................10
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricRegistry..................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricsTrackerFactory...........none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - minimumIdle.....................10
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - password........................<masked>
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - poolName........................"HikariPool-1"
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - readOnly........................false
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - registerMbeans..................false
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - scheduledExecutor...............none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - schema..........................none
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - threadFactory...................internal
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - transactionIsolation............default
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - username........................"sa"
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - validationTimeout...............5000
+2024-01-07 at 17:49:43 CET INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - HikariPool-1 - Starting...
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.util.DriverDataSource 107 <init> - Loaded driver with class name org.hsqldb.jdbc.JDBCDriver for jdbcUrl=jdbc:hsqldb:file:testdb
+2024-01-07 at 17:49:43 CET INFO  com.zaxxer.hikari.pool.PoolBase 536 getAndSetNetworkTimeout - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-01-07 at 17:49:43 CET INFO  com.zaxxer.hikari.pool.HikariPool 565 checkFailFast - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@75504cef
+2024-01-07 at 17:49:43 CET INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - HikariPool-1 - Start completed.
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'createJdbcTemplate' via factory method to bean named 'createDataSource'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'postService' via constructor to bean named 'createJdbcTemplate'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postTableInitializer'
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 537 update - Executing SQL update [CREATE TABLE IF NOT EXISTS posts (id BIGINT IDENTITY NOT NULL PRIMARY KEY, sub_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, upvotes INTEGER NOT NULL, downvotes INTEGER NOT NULL, num_comments INTEGER NOT NULL, created_utc BIGINT NOT NULL)]
+2024-01-07 at 17:49:43 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:49:43 CET DEBUG com.rabbitmq.client.impl.ConsumerWorkService 40 <init> - Creating executor service with 8 thread(s) for consumer work service
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@c2e45c3
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@6d62eb3
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@43d4b00d
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@3daaf5e9
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@725dd060
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@45c9cb2e
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@23fb4f42
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@4914f369
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@5556e4fb
+2024-01-07 at 17:49:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:50:13 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:50:13 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:50:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:50:43 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.context.support.AbstractApplicationContext 630 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51c693d
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/service/PostService.class]
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/utils/PostTableInitializer.class]
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'appConfig'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.url' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.username' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.password' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postService'
+2024-01-07 at 17:51:02 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.service.PostService
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createJdbcTemplate'
+2024-01-07 at 17:51:02 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.AppConfig
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createDataSource'
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1100 logConfiguration - HikariPool-1 - configuration:
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - allowPoolSuspension.............false
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - autoCommit......................true
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - catalog.........................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionInitSql...............none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTestQuery.............none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTimeout...............30000
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSource......................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceClassName.............none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceJNDI..................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceProperties............{password=<masked>, idleTimeout=60, autoCommit=true, connectionTimeout=5}
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - driverClassName.................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - exceptionOverrideClassName......none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckProperties...........{}
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckRegistry.............none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - idleTimeout.....................600000
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - initializationFailTimeout.......1
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - isolateInternalQueries..........false
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - jdbcUrl.........................jdbc:hsqldb:file:testdb
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - keepaliveTime...................0
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - leakDetectionThreshold..........0
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maxLifetime.....................1800000
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maximumPoolSize.................10
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricRegistry..................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricsTrackerFactory...........none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - minimumIdle.....................10
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - password........................<masked>
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - poolName........................"HikariPool-1"
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - readOnly........................false
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - registerMbeans..................false
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - scheduledExecutor...............none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - schema..........................none
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - threadFactory...................internal
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - transactionIsolation............default
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - username........................"sa"
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - validationTimeout...............5000
+2024-01-07 at 17:51:02 CET INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - HikariPool-1 - Starting...
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.util.DriverDataSource 107 <init> - Loaded driver with class name org.hsqldb.jdbc.JDBCDriver for jdbcUrl=jdbc:hsqldb:file:testdb
+2024-01-07 at 17:51:02 CET INFO  com.zaxxer.hikari.pool.PoolBase 536 getAndSetNetworkTimeout - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-01-07 at 17:51:02 CET INFO  com.zaxxer.hikari.pool.HikariPool 565 checkFailFast - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@4fe01805
+2024-01-07 at 17:51:02 CET INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - HikariPool-1 - Start completed.
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'createJdbcTemplate' via factory method to bean named 'createDataSource'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'postService' via constructor to bean named 'createJdbcTemplate'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postTableInitializer'
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 537 update - Executing SQL update [CREATE TABLE IF NOT EXISTS posts (id BIGINT IDENTITY NOT NULL PRIMARY KEY, sub_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, upvotes INTEGER NOT NULL, downvotes INTEGER NOT NULL, num_comments INTEGER NOT NULL, created_utc BIGINT NOT NULL)]
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG com.rabbitmq.client.impl.ConsumerWorkService 40 <init> - Creating executor service with 8 thread(s) for consumer work service
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@77e79a97
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@7d1ff1e7
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@381d7020
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@73e56696
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@96f2a53
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@b7d6250
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@58328f6f
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@3b9329
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@70f61ccf
+2024-01-07 at 17:51:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:02 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:51:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:51:37 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:52:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:52:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:52:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:52:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:53:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:53:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:53:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:53:32 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:54:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:54:02 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.context.support.AbstractApplicationContext 630 prepareRefresh - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@51c693d
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/service/PostService.class]
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider 440 scanCandidateComponents - Identified candidate component class: file [/Users/wenjiefu/Develop/RabbitMQ-Project/RabbitMQ-Java/target/classes/com/imt/rabbitmq/utils/PostTableInitializer.class]
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'appConfig'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.url' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.username' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.core.env.PropertySourcesPropertyResolver 115 logKeyFound - Found key 'jdbc.password' in PropertySource 'class path resource [jdbc.properties]' with value of type String
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postService'
+2024-01-07 at 17:54:07 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.service.PostService
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createJdbcTemplate'
+2024-01-07 at 17:54:07 CET WARN  org.springframework.core.LocalVariableTableParameterNameDiscoverer 123 inspectClass - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.imt.rabbitmq.AppConfig
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'createDataSource'
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1100 logConfiguration - HikariPool-1 - configuration:
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - allowPoolSuspension.............false
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - autoCommit......................true
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - catalog.........................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionInitSql...............none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTestQuery.............none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - connectionTimeout...............30000
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSource......................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceClassName.............none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceJNDI..................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - dataSourceProperties............{password=<masked>, idleTimeout=60, autoCommit=true, connectionTimeout=5}
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - driverClassName.................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - exceptionOverrideClassName......none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckProperties...........{}
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - healthCheckRegistry.............none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - idleTimeout.....................600000
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - initializationFailTimeout.......1
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - isolateInternalQueries..........false
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - jdbcUrl.........................jdbc:hsqldb:file:testdb
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - keepaliveTime...................0
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - leakDetectionThreshold..........0
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maxLifetime.....................1800000
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - maximumPoolSize.................10
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricRegistry..................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - metricsTrackerFactory...........none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - minimumIdle.....................10
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - password........................<masked>
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - poolName........................"HikariPool-1"
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - readOnly........................false
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - registerMbeans..................false
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - scheduledExecutor...............none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - schema..........................none
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - threadFactory...................internal
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - transactionIsolation............default
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - username........................"sa"
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.HikariConfig 1132 logConfiguration - validationTimeout...............5000
+2024-01-07 at 17:54:07 CET INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - HikariPool-1 - Starting...
+2024-01-07 at 17:54:07 CET DEBUG com.zaxxer.hikari.util.DriverDataSource 107 <init> - Loaded driver with class name org.hsqldb.jdbc.JDBCDriver for jdbcUrl=jdbc:hsqldb:file:testdb
+2024-01-07 at 17:54:07 CET INFO  com.zaxxer.hikari.pool.PoolBase 536 getAndSetNetworkTimeout - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-01-07 at 17:54:07 CET INFO  com.zaxxer.hikari.pool.HikariPool 565 checkFailFast - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@55120f99
+2024-01-07 at 17:54:07 CET INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - HikariPool-1 - Start completed.
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'createJdbcTemplate' via factory method to bean named 'createDataSource'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.ConstructorResolver 801 createArgumentArray - Autowiring by type from bean name 'postService' via constructor to bean named 'createJdbcTemplate'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.beans.factory.support.DefaultSingletonBeanRegistry 225 getSingleton - Creating shared instance of singleton bean 'postTableInitializer'
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 537 update - Executing SQL update [CREATE TABLE IF NOT EXISTS posts (id BIGINT IDENTITY NOT NULL PRIMARY KEY, sub_name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, upvotes INTEGER NOT NULL, downvotes INTEGER NOT NULL, num_comments INTEGER NOT NULL, created_utc BIGINT NOT NULL)]
+2024-01-07 at 17:54:07 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:08 CET DEBUG com.rabbitmq.client.impl.ConsumerWorkService 40 <init> - Creating executor service with 8 thread(s) for consumer work service
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@77e79a97
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@7d1ff1e7
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@381d7020
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@73e56696
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@96f2a53
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@b7d6250
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@58328f6f
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@3b9329
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator 738 call - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@70f61ccf
+2024-01-07 at 17:54:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 989 update - Executing SQL update and returning generated keys
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.core.JdbcTemplate 643 execute - Executing prepared SQL statement
+2024-01-07 at 17:54:14 CET DEBUG org.springframework.jdbc.datasource.DataSourceUtils 116 doGetConnection - Fetching JDBC Connection from DataSource
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Weekly New Climber Thread: Ask your questions in this thread please, upvotes=5, downvotes=0, numComments=96, createdUtc=1704466816)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Daily Discussion Thread: spray/memes/chat/whatever allowed, upvotes=2, downvotes=1, numComments=0, createdUtc=1704628835)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Leo Bøe sends 9a in the rain, upvotes=26, downvotes=2, numComments=7, createdUtc=1704627002)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Francesco Berardino repeats Celestite (V16/8C+), upvotes=21, downvotes=2, numComments=0, createdUtc=1704616349)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Alex Megos downgrades Sleeping Lion to 9b (5.15b), upvotes=321, downvotes=3, numComments=75, createdUtc=1704557217)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Alex Megos sends Sleeping Lion, upvotes=318, downvotes=3, numComments=71, createdUtc=1704468158)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Daily Discussion Thread: spray/memes/chat/whatever allowed, upvotes=5, downvotes=1, numComments=1, createdUtc=1704542428)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Tomoa Narasaki: Gakido (V14) Flash and Ashurado (V15) FA (with English subtitles), upvotes=74, downvotes=1, numComments=15, createdUtc=1704477371)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Can you flash linkups? 1st go send of Peter North Pump V9, upvotes=120, downvotes=12, numComments=35, createdUtc=1704432081)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Weekend Whipper: Back-slapping Fall Runout Slab, upvotes=13, downvotes=2, numComments=21, createdUtc=1704473978)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Threshold - Coopers Rock, upvotes=8, downvotes=0, numComments=1, createdUtc=1704454063)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=THE LONG WALL - THE WORLD LONGEST ROCK CLIMB (1 dream, 2 dirtbags, 9000ft climbing), upvotes=93, downvotes=13, numComments=15, createdUtc=1704398091)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Daily Discussion Thread: spray/memes/chat/whatever allowed, upvotes=2, downvotes=0, numComments=1, createdUtc=1704456022)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Pulling hard on Crank at Mt. Yonah, upvotes=141, downvotes=8, numComments=17, createdUtc=1704373898)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Building Climbing at Brown, upvotes=12, downvotes=2, numComments=4, createdUtc=1704420938)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=New Silly Climbing Film, upvotes=50, downvotes=3, numComments=7, createdUtc=1704383447)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Free Open-Source LED Climbing Wall Software, upvotes=66, downvotes=3, numComments=19, createdUtc=1704375302)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Casper the Ghost, 5.10b - Suesca, Colombia, upvotes=46, downvotes=3, numComments=5, createdUtc=1704379739)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Stop the Bolt Prohibition! — Access Fund, upvotes=404, downvotes=73, numComments=161, createdUtc=1704299455)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Daily Discussion Thread: spray/memes/chat/whatever allowed, upvotes=4, downvotes=0, numComments=40, createdUtc=1704369627)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Joshua Tree 1/1, upvotes=8, downvotes=1, numComments=1, createdUtc=1704315995)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=White Rastafarian, Joshua Tree, upvotes=223, downvotes=7, numComments=46, createdUtc=1704247083)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=What is the Red River Gorge known for? Cash Money Face Climbing, upvotes=26, downvotes=1, numComments=4, createdUtc=1704286900)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Cheeky heelhook beta for Big K's first move., upvotes=69, downvotes=5, numComments=18, createdUtc=1704261479)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=A lucky recovery on the flash of 'B**ch slap 5' v9 in kraft, upvotes=439, downvotes=9, numComments=17, createdUtc=1704213428)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=Daily Discussion Thread: spray/memes/chat/whatever allowed, upvotes=3, downvotes=0, numComments=43, createdUtc=1704283237)
+2024-01-07 at 17:54:14 CET INFO  com.imt.rabbitmq.Starter 43 lambda$main$1 - Post(subName=climbing, title=DWS Tenerife, Spain, upvotes=73, downvotes=8, numComments=11, createdUtc=1704211246)
+2024-01-07 at 17:54:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:54:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:55:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:55:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:55:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:55:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:56:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:56:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:56:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:56:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:57:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:57:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:57:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:57:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:58:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:58:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:58:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:58:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:59:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:59:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 17:59:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 17:59:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 18:00:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 18:00:08 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+2024-01-07 at 18:00:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2024-01-07 at 18:00:38 CET DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
