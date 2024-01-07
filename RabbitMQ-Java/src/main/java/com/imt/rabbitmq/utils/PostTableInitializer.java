@@ -1,4 +1,4 @@
-package com.imt.persistent;
+package com.imt.rabbitmq.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -13,8 +13,7 @@ public class PostTableInitializer {
 
   @PostConstruct
   public void init() {
-    //System.out.println("hi");
-    jdbcTemplate.update("DROP TABLE IF EXISTS posts");
+    //jdbcTemplate.update("DROP TABLE IF EXISTS posts");
     jdbcTemplate.update(
       "CREATE TABLE IF NOT EXISTS posts (" +
         "id BIGINT IDENTITY NOT NULL PRIMARY KEY, " + // Assuming an ID field for unique identification

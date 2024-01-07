@@ -1,8 +1,8 @@
-package com.imt.persistent;
+package com.imt.rabbitmq.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.imt.persistent.beans.Post;
+import com.imt.rabbitmq.beans.Post;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class Utils {
       if (postsNode.isArray()) {
         for (JsonNode postNode : postsNode) {
           Post post = mapper.treeToValue(postNode, Post.class);
-          post.setSub_name(rootNode.get("sub_name").asText());
+          post.setSubName(rootNode.get("sub_name").asText());
           posts.add(post);
         }
       }

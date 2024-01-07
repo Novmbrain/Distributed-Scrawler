@@ -1,4 +1,4 @@
-package com.imt.persistent.beans;
+package com.imt.rabbitmq.beans;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,10 +1,9 @@
-package com.imt.persistent.beans;
+package com.imt.rabbitmq.beans;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
 
 
 /**
@@ -18,10 +17,13 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Post {
-  private String sub_name;
+  @JsonProperty(value = "sub_name")
+  private String subName;
   private String title;
   private int upvotes;
   private int downvotes;
-  private int num_comments;
-  private long created_utc;
+  @JsonProperty(value = "num_comments")
+  private int numComments;
+  @JsonProperty(value = "created_utc")
+  private long createdUtc;
 }
