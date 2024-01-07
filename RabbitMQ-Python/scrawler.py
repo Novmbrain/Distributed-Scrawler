@@ -32,6 +32,16 @@ headers['authorization']=f'bearer {token}' #add access_token to header
 
 url = 'https://oauth.reddit.com/r/'
 
+def get_subreddits_with_keyword(keyword):
+    search_url = f"https://oauth.reddit.com/subreddits/search?q={keyword}"
+
+    response = requests.get(search_url, headers=headers)
+    if response.status_code != 200:
+        print(f'Error: {response.status_code}')
+        return []
+    subreddits = response.json()['data']['children']
+    return [subreddit['data']['display_name'] for subreddit in subreddits]
+
 def get_datas_with_given_subreddit(name):
     res = {}
     get_information(name, res)

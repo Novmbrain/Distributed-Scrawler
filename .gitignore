@@ -1,6 +1,7 @@
 .DS_Store
 
 RabbitMQ-Python/__pycache__
+
 .idea/
 
-RabbitMQ-Java/logs/
+RabbitMQ-Python/.idea
