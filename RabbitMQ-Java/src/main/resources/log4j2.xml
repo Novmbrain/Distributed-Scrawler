@@ -11,7 +11,7 @@
                 error：错误，输出错误信息
                 fatal：严重错误
         -->
-        <root level="Debug">
+        <root level="Info">
             <appender-ref ref="spring6log"/>
             <appender-ref ref="RollingFile"/>
             <appender-ref ref="log"/>
