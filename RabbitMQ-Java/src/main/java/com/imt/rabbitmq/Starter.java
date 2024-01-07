@@ -40,13 +40,12 @@ public class Starter {
           )
       );
 
-        posts.forEach(post -> log.info(post.toString()));
+      posts.forEach(post -> log.info(post.toString()));
     };
 
-    Channel channel = MQReceiver.getChannel();
-    channel.basicConsume(MQReceiver.RESULTS_QUEUE, true, deliverCallback, consumerTag ->
+    boolean autoAck = true; 
 
-    {
-    });
+    Channel channel = MQReceiver.getChannel();
+    channel.basicConsume(MQReceiver.RESULTS_QUEUE, autoAck, deliverCallback, consumerTag -> {});
   }
 }

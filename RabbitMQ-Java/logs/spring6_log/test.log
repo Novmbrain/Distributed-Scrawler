@@ -207,3 +207,11 @@
 18:00:08.219 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
 18:00:38.227 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 18:00:38.228 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+18:01:08.233 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+18:01:08.234 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+18:01:38.241 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+18:01:38.244 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+18:02:08.252 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+18:02:08.254 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+18:02:38.259 DEBUG com.zaxxer.hikari.pool.HikariPool 414 logPoolState - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+18:02:38.261 DEBUG com.zaxxer.hikari.pool.HikariPool 521 fillPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
