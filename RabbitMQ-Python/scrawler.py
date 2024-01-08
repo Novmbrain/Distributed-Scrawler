@@ -52,7 +52,7 @@ def get_datas_with_given_subreddit(name):
 def get_information(name, result):
     global url
     sub_url = url + name + '/about'
-    print(sub_url)
+    # print(sub_url)
     res = requests.get(sub_url, headers=headers)
 
     if res.status_code != 200:
@@ -67,7 +67,7 @@ def get_information(name, result):
 def get_posts(name, result):
     global url
     sub_url = url + name
-    print(sub_url)
+    # print(sub_url)
     res = requests.get(sub_url, headers=headers)
 
     if res.status_code != 200:
